@@ -7,25 +7,25 @@ Running the server:
 
 
 *	Open terminal. Enter command
-ssh sats@45.79.181.198
+  *  ssh sats@45.79.181.198
 
 When it asks for password enter this password: confluence909090
 
 *	To start our server we need to enter the virtual environment. For that use command:
-source venv/bin/activate
+  * source venv/bin/activate
 
 *	Type cd buttonpython/ to enter buttonpython directory
 
 *	Start server using:
-gunicorn --bind 0.0.0.0:8000 buttonpython.wsgi -t 1200
+  * gunicorn --bind 0.0.0.0:8000 buttonpython.wsgi -t 1200
 
 *	Go to AWS page. Check if serve is running. Check if dashboard is working on:   
 
 *	Start a new terminal window. Type following commands:
-*	ssh sats@45.79.181.198
-When it asks for password: confluence909090
-* cd buttonpython/
-*	./script.sh
+  *	ssh sats@45.79.181.198
+  When it asks for password: confluence909090
+  * cd buttonpython/
+  *	./script.sh
 
 This starts our servers -both linode and AWS and the script which transfers the csv data to dashboard.
 
@@ -35,9 +35,9 @@ Code Explaination:
 *	The second part consists of extracting the actual tweet from the tweet URLs. The extract_tweets() function describes the fields we are extracting. The data is extracted in batches to avoid timeout.
 
 *	The third part consists of Sentiment Analysis. Here we do the following steps:
-○	Converting to lowercase
-○	Removing punctuation
-○	Removing stopwords
-○	Lemmatization
-○	Calculating Polarity scores
+  *	Converting to lowercase
+  *	Removing punctuation
+  *	Removing stopwords
+  *	Lemmatization
+  *	Calculating Polarity scores
 
