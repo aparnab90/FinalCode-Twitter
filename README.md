@@ -10,14 +10,19 @@ Running the server:
 ssh sats@45.79.181.198
 
 When it asks for password enter this password: confluence909090
+
 ●	To start our server we need to enter the virtual environment. For that use command:
 source venv/bin/activate
+
 ●	Type cd buttonpython/ to enter buttonpython directory
+
 ●	Start server using:
 gunicorn --bind 0.0.0.0:8000 buttonpython.wsgi -t 1200
 
-●	Go to AWS page. Check if serve is running. Check if dashboard is working on: 
+●	Go to AWS page. Check if serve is running. Check if dashboard is working on:   
+
 ●	Start a new terminal window. Type following commands:
+
 ○	ssh sats@45.79.181.198
 When it asks for password: confluence909090
 ○	cd buttonpython/
