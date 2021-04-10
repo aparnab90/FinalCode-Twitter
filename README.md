@@ -1,7 +1,11 @@
 # FinalCode-Twitter
 
 Running the server:
+
+
 ●	Go to Linode server: https://cloud.linode.com/linodes Reboot the server.
+
+
 ●	Open terminal. Enter command
 ssh sats@45.79.181.198
 
