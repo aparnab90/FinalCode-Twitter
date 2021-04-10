@@ -1,0 +1,23 @@
+input {
+    file {
+        path => "/home/sats/buttonpython/negtweets.csv"
+        start_position => "beginning"
+        }
+ }
+
+ filter {
+        csv{
+            separator => ","
+            columns => ["Sno","tweet_ID","username","lemmatize","polarity"]
+        } 
+}	
+
+ output{
+        elasticsearch{
+            hosts => "http://:9200"
+            index => "index_i_nt3"
+	    document_id => "%{tweet_ID}"
+	}
+
+        stdout {}
+ }

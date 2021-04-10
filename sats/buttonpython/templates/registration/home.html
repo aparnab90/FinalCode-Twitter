@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Sentiment Analysis
+        </title>
+
+    </head>
+
+    
+    <body>
+        
+	<form action="/external/" method="post">
+            {% csrf_token %}
+    
+	    Input Text:
+            <input type="text" name="param" required> <br><br>
+            {{data_external}} <br><br>
+            {{data1}}
+            <input type="submit" value="Execute">
+
+            <button onclick="location.href= 'http://3.128.176.240/goto/e8c2489af089c91aed06d189c6638cbb'"> View Sentiment</button> <hr>
+            {% if data %}
+            {{data | safe}}
+            {% endif %}
+
+
+        </form>
+
+    </body>
+</html>

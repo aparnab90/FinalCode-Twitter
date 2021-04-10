@@ -1,0 +1,5 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+artifacts.elastic.co	0	1	1614977747	15724800
+download.elastic.co	0	1	1614978315	15724800
